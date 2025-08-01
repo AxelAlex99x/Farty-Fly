@@ -24,7 +24,6 @@ public class Player : MonoBehaviour
     {
         if (isPlayerAlive && Touchscreen.current.primaryTouch.press.wasPressedThisFrame)
         {
-            Debug.Log("Touch began");
             animator.SetBool(IsTapping, true);
             fart.Play();
             soundEffects.PlayRandom();

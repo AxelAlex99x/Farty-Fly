@@ -725,7 +725,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
@@ -7738,6 +7738,10 @@ PrefabInstance:
     - target: {fileID: 6939056866398687913, guid: b6448b1208e314740ba7b8a98e91f8c0, type: 3}
       propertyPath: m_Constraints
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8861656418550612285, guid: b6448b1208e314740ba7b8a98e91f8c0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

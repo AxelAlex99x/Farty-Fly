@@ -649,6 +649,9 @@ GameObject:
   - component: {fileID: 897741536}
   - component: {fileID: 897741535}
   - component: {fileID: 897741539}
+  - component: {fileID: 897741541}
+  - component: {fileID: 897741540}
+  - component: {fileID: 897741542}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -754,6 +757,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiScore: {fileID: 0}
   gameOverScreen: {fileID: 0}
+  gameOverScore: {fileID: 0}
+--- !u!114 &897741540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897741534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62da6bf62cb5a64da5d301ceaa4d84a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationHandler: {fileID: 897741541}
+  notificationDelay: 12
+  maxNotifications: 3
+--- !u!114 &897741541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897741534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9fdba36081a9594d854a3e964baef40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &897741542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897741534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e1add3586562e14480d1d633f9bb49b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fps: 120
 --- !u!1 &1027492036
 GameObject:
   m_ObjectHideFlags: 0

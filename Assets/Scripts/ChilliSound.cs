@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ChilliSound : MonoBehaviour
 {
+    [SerializeField] private Animator animator;
     private AudioSource audioSource;
     private Collider2D _collider;
     void Start()
@@ -17,6 +18,7 @@ public class ChilliSound : MonoBehaviour
         {
             _collider.enabled = false;
             audioSource.Play();
+            animator.SetBool("isTalking", true);
         }
     }
 }

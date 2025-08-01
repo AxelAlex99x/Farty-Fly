@@ -34,9 +34,7 @@ public class ObstaclesSpawner : MonoBehaviour
     private float RandomPosition()
     {
         float offset_1 = transform.position.y + offset;
-        Debug.Log(offset_1);
         float offset_2 = transform.position.y - offset;
-        Debug.Log(offset_2);
         return Random.Range(offset_1, offset_2);
     }
 }

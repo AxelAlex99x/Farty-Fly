@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PipeTrigger : MonoBehaviour
 {
+    [SerializeField] private Animator animator;
     public UIHandler uiHandler;
     private AudioSource audioSource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,6 +16,7 @@ public class PipeTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            animator.SetBool("isTalking", false);
             uiHandler.AddScore();
             gameObject.SetActive(false);
         }
