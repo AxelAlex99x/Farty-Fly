@@ -41,6 +41,25 @@
                 "com.unity3d.player.UnityPlayerActivity"
             ]
         },
-        "DrawableResources": []
+        "DrawableResources": [
+            {
+                "Id": "icon_0",
+                "Type": 0,
+                "Asset": {
+                    "fileID": 2800000,
+                    "guid": "1e51af67ab0e8cb4a9bfb60c429c5ed6",
+                    "type": 3
+                }
+            },
+            {
+                "Id": "icon_1",
+                "Type": 1,
+                "Asset": {
+                    "fileID": 2800000,
+                    "guid": "1f979924752f45a45a8b257709c09010",
+                    "type": 3
+                }
+            }
+        ]
     }
 }

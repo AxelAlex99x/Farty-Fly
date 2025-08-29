@@ -7,6 +7,9 @@ public class UIHandler : MonoBehaviour
     [SerializeField] private TextMeshProUGUI uiScore;
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private TextMeshProUGUI gameOverScore;
+    [SerializeField] private GameObject highScoreScreen;
+    [SerializeField] private TextMeshProUGUI uiHighScoreScreen;
+    [SerializeField] private GameObject highScoreResetPopUp;
     private const string HighScoreKey  = "HighScore"; 
     
     int score = 0;
@@ -52,5 +55,37 @@ public class UIHandler : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void HighScoreScreen()
+    {
+        int currentHighScore = PlayerPrefs.GetInt(HighScoreKey, 0);
+        highScoreScreen.SetActive(true);
+        uiHighScoreScreen.text = $"High Score: {currentHighScore.ToString()}";
+    }
+
+    public void CancelResetAndGoToMenu()
+    {
+        highScoreScreen.SetActive(false);
+    }
+
+    public void ResetHighScore()
+    {
+        int currentHighScore;
+        PlayerPrefs.SetInt(HighScoreKey, 0);
+        currentHighScore = PlayerPrefs.GetInt(HighScoreKey, 0);
+        uiHighScoreScreen.text = $"High Score: {currentHighScore.ToString()}";
+        ShowPopUp();
+        Invoke(nameof(HidePopUp), 0.7f);
+    }
+
+    private void ShowPopUp()
+    {
+        highScoreResetPopUp.SetActive(true);
+    }
+
+    private void HidePopUp()
+    {
+        highScoreResetPopUp.SetActive(false);
     }
 }

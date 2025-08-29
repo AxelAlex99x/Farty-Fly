@@ -713,6 +713,7 @@ MonoBehaviour:
   voices:
   - {fileID: 8300000, guid: 5142f65edd1c4fc41a1e0a065306e28a, type: 3}
   - {fileID: 8300000, guid: 57ec8fc0822870a4c8241e10849e8986, type: 3}
+  - {fileID: 8300000, guid: 23bd147323b08dc458672f467ad1565e, type: 3}
 --- !u!82 &346270248
 AudioSource:
   m_ObjectHideFlags: 0
